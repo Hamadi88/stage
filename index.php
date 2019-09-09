@@ -19,32 +19,29 @@
     </div>
 
     <button class="accordion">File</button>
-    <div class="file">
         <div class="file">
                   <button>RC</button>
                   <button>MC</button>
                   <button>OM</button>
+        
         </div>
-    </div>
 
     <button class="accordion">Placements RC / MOC / OM</button>
-    <div class="PlacRC">
-        <div>
+        <div class="PlacRC">
             <input type="checkbox" name="RC" id="RC">RC</input>
             <input type="checkbox" name="MOC" id="MOC">MOC</input>
             <input type="checkbox" name="OM" id="OM">OM</input>
         </div>
-    </div>
 
 
     <button class="accordion">Placements Specifiques MOB / OM</button>
     <div class="PlacSpec">
-        <div>
+        
             <input type="checkbox" name="SDC" id="SDC">SDC</input>
             <input type="checkbox" name="ASU" id="ASU">ASU</input>
             <input type="checkbox" name="OVERTE" id="OVERTE">OVERTE</input>
             <input type="checkbox" name="GAZ" id="GAZ">GAZ</input>
-        </div>
+    
     </div>
 
 

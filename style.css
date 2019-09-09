@@ -10,16 +10,20 @@
     transition: 0.4s;
 }
 
-.active, .accordion:hover {
-    background-color: #ccc;
+.file button{
+  background-color : #23282d;
+  border: 1px solid green; 
+  color: white; 
+  padding: 10px 24px;
+  cursor: pointer; 
+  float: left; 
+  
 }
 
-.file{
-    padding: 0 15px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+ .accordion:hover {
+    background-color: red;
 }
+
 
 .PlacRC {
     padding: 0 15px;
