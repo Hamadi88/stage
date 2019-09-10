@@ -20,6 +20,25 @@
   
 }
 
+.rc:focus{
+    background:green;
+    color:white;
+}
+
+.mc:focus{
+    background:green;
+    color:white;
+}
+
+.om:focus{
+    background: green;
+    color:white;
+}
+  
+.file button:hover{
+    background-color: green;
+}
+
  .accordion:hover {
     background-color: red;
 }
@@ -47,3 +66,66 @@
 }
 
 
+
+.check{
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0,0,0);
+
+}
+.check:before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(#223254,.03);
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+.check:hover svg{
+    stroke: #4285F4;
+}
+.check:hover:before{
+    opacity: 1;
+}
+.check svg{
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #C8CCD4;
+    stroke-width: 1.5;
+    transform: translate3d(0,0,0);
+    transition: all .2s ease;
+
+}
+.check svg path{
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+.check svg polyline{
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+
+.cbx:checked + .check svg{
+    stroke: #4285F4;
+}
+.cbx:checked + .check path{
+    stroke-dashoffset: 60;
+    transition: all .3s linear;
+}
+
+.cbx:checked + .check polyline{
+    stroke-dashoffset: 42;
+    transition: all .2s linear;
+    transition-delay: .15s;
+}
