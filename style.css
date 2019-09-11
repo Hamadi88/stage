@@ -1,72 +1,171 @@
+@font-face{
+    font-family:'lato';
+    src:url(Lato-Regular.ttf);
+}
+
+@font-face{
+    font-family:'ptitre';
+    src:url(Lato-Black.ttf);
+}
+
+        body {
+        margin : 0;
+        background: radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 5% 9% / 5em 5em,
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 10% 24% / 2em 2em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 56% 32% / 2em 2em,
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 80% 14% / 2em 2em,
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 75% 8% / 2em 2em,
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 101% 18% / 2em 2em,
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 41% 28% / 2em 2em,
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 110% 144% / 3em 3em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 49% 137% / 6em 6em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 17% 122% / 1em 1em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 63% 136% / 2em 2em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 6% 133% / 3em 3em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 92% 114% / 0.87em 0.87em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 61% 108% / 0.56em 0.56em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 22% 124% / 0.62em 0.62em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 112% 87% / 0.5em 0.5em, 
+        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 40%) 11% 82% / 0.76em 0.76em;
+        background-color: rgba(241, 241, 241, 0.986);
+        background-repeat: no-repeat;
+        color: #3A5795;
+    }
+    
+
+
+/*les sous-titres*/
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background: rgb(74,174,222);
+    background: linear-gradient(240deg, rgba(74,174,222,0.8687675753895308) 10%, rgba(58,87,149,1) 59%);
+    color: #FFF;
+    font-size:18px;
+    font-family:'lato';
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     border: none;
     outline: none;
     transition: 0.4s;
+
+}
+  /* icone + */
+ .accordion:after {
+    content: '\02795'; 
+    font-size: 15px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  /* icone (-) */
+  .active:after {
+    content: "\2796"; 
+  }
+  
+  
+
+/*le paragraphe*/
+.paragraphe{
+    text-align: center;
 }
 
+/*titre en gras */
+.titre{
+    font-family: 'ptitre';
+    text-align: center;
+   
+}
+
+/* style des boutons 'file*/
 .file button{
   background-color : #23282d;
-  border: 1px solid green; 
+  border: 1px solid white; 
   color: white; 
   padding: 10px 24px;
   cursor: pointer; 
   float: left; 
-  
+
 }
 
+.file{
+    display:none;
+    background-color:#777;
+    opacity: 1;  
+    margin:auto;
+    width:20px;
+    
+}
+
+.position{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    width:100%;
+    padding:3px;
+}
+
+
+/* pour que mes boutons garde une couleur  quand on clik*/
 .rc:focus{
-    background:green;
+    background:#777;
     color:white;
 }
 
 .mc:focus{
-    background:green;
+    background:#777;
     color:white;
 }
 
 .om:focus{
-    background: green;
+    background: rgb(100, 100, 100);
     color:white;
 }
-  
+ 
+/* couleur au moment du survol*/
 .file button:hover{
-    background-color: green;
+    background-color:#777;
 }
 
  .accordion:hover {
-    background-color: red;
+    background: rgb(35,40,45);
+    background: linear-gradient(240deg, rgba(35,40,45,1) 2%, rgba(58,87,149,1) 40%, rgba(74,174,222,0.8687675753895308) 69%);
 }
 
-
+/* les boutons de la partie placements rc/mob/om*/
 .PlacRC {
     padding: 0 15px;
-    background-color: white;
+    background-color:rgba(119, 119, 119, 0.5);
     display: none;
     overflow: hidden;
+    text-align:center;
+    
+
 }
 
+/* les boutons de la partie placements specifiques*/
 .PlacSpec {
     padding: 0 15px;
-    background-color: white;
+    background-color:#777;
     display: none;
     overflow: hidden;
+    background-color:rgba(119, 119, 119, 0.5);
+    text-align:center;
 }
 
+/* champs deroulant typologie*/
 .Typo {
     padding: 0 15px;
-    background-color: white;
+    background-color:#777;
     display: none;
     overflow: hidden;
+    background-color:rgba(119, 119, 119, 0.5);
+    text-align:center;
 }
 
 
-
+/* animation sur les checkbox*/
 .check{
     cursor: pointer;
     position: relative;
@@ -129,3 +228,45 @@
     transition: all .2s linear;
     transition-delay: .15s;
 }
+
+
+/*animation du bouton "declarer ma vente " */
+
+
+.btn-bubble {
+    color: white;
+    background-color: #23282D;
+    background-repeat: no-repeat;
+  }
+
+.btn-bubble:hover, .btn-bubble:focus {
+    animation: bubbles 1s forwards ease-out;
+    background: radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) -4% 139% / 1.02em 1.02em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 110% 144% / 0.96em 0.96em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 49% 137% / 0.6em 0.6em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 17% 122% / 0.61em 0.61em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 63% 136% / 0.55em 0.55em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 6% 133% / 0.62em 0.62em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 92% 114% / 0.87em 0.87em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 61% 108% / 0.56em 0.56em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 22% 124% / 0.62em 0.62em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 112% 87% / 0.5em 0.5em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 11% 82% / 0.76em 0.76em;
+    background-color:#44aaaa;
+    background-repeat: no-repeat;
+}
+  
+@keyframes bubbles {
+    100% {
+      background-position: -8% -30%, 111% -347%, 41% -358%, 22% -276%, 63% -14%, 8% -7%, 91% -277%, 58% -360%, 14% -41%, 119% -307%, 12% -165%;
+      box-shadow: inset 0 -6.5em 0 #3A5795;
+    }
+}
+
+.btn {
+    background-color: #3A5795;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em 2em;
+    left:60px;
+    border-radius: 30px;
+}
+
+
+  .btn:hover {
+    
+      cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+  }
+  
+  
+  

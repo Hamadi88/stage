@@ -18,12 +18,13 @@
         plerumque pacis perfectam foedere Fortuna.</p>
     </div>
 
-    <button class="accordion">File</button>
+    <button class="accordion">File</button> 
         <div class="file">
+                <div class="position">
                   <button class="rc">RC</button>
                   <button class="mc">MC</button>
-                  <button class="om">OM</button>
-        
+                  <button class="om">OM</button>  
+                </div>
         </div>
 
         <button class="accordion">Placements RC / MOC / OM</button>
@@ -136,10 +137,11 @@
         </div>
     
 
-    <button class="button">Je déclare ma vente
-    </button>
+        <button class="btn btn-bubble">Je déclare ma vente</button>
+    
 
     <script src="script.js"></script>
 </body>
 
 </html>
+
