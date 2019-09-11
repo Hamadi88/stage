@@ -9,9 +9,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="titre" >
-        <h1>Déclarer une vente</h1>
-    </div>
+            <div class="globTitre">
+                <div class="rien">
+                    
+                </div>
+                <div class="titre" >
+                    <h1>Déclarer une vente</h1>
+                </div>
+
+                <div class="OnOff">
+                   <input type="checkbox" id="s3" />
+                    <label class="slider-v2" for="s3"></label>
+                </div>
+            </div>
 
     <div class="paragraphe">
         <p>Aeternae atque aeternae mundanum convenit
@@ -22,7 +32,7 @@
         <div class="file">
                 <div class="position">
                   <button class="rc">RC</button>
-                  <button class="mc">MC</button>
+                  <button class="mc">MOC</button>
                   <button class="om">OM</button>  
                 </div>
         </div>
@@ -136,8 +146,11 @@
                    </select>
         </div>
     
-
-        <button class="btn btn-bubble">Je déclare ma vente</button>
+        <div class="monbouton">
+    
+            <button class="btn btn-bubble">Je déclare ma vente</button>
+        </div>
+        
     
 
     <script src="script.js"></script>
