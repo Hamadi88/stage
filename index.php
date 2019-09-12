@@ -3,32 +3,37 @@
 <head>
 
     <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style1.css">-->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Déclarer une vente</title>
 </head>
 <body>
-            <div class="globTitre">
-                <div class="rien">
-                    
-                </div>
-                <div class="titre" >
-                    <h1>Déclarer une vente</h1>
-                </div>
-
-                <div class="OnOff">
-                   <input type="checkbox" id="s3" />
-                    <label class="slider-v2" for="s3"></label>
-                </div>
+    <div class="globTitre">
+            <div class="logo">
+                <img src="./img/sodabyarma-1.png">
             </div>
+        <div class="titre" >
+            <h1>Déclarer une vente</h1>
+        </div>
 
-    <div class="paragraphe">
-        <p>Aeternae atque aeternae mundanum convenit
-        plerumque pacis perfectam foedere Fortuna.</p>
+        <div class="OnOff">
+            <input type="checkbox" id="s3" />
+            <label class="slider-v2" for="s3"></label>
+        </div>
     </div>
 
-    <button class="accordion">File</button> 
+    <div class="paragraphe">
+        <p >Bonjour Dupont !Tu vas déclarer une vente pour le superviseur 7047678willier,le RP :7047678 et le site de Calais,Tu peux remplir directement le formulaire ci dessous ou le faire depuis une page dédiée en cliquant ici</p>
+    </div>
+
+<div class="accor">
+        <button class="accordion" id="accFile">
+            File
+            <div id="icon1"></div>
+        </button>
         <div class="file">
                 <div class="position">
                   <button class="rc">RC</button>
@@ -37,7 +42,11 @@
                 </div>
         </div>
 
-        <button class="accordion">Placements RC / MOC / OM</button>
+        <button class="accordion">
+             Placements RC / MOC / OM
+             <div id="icon2"></div>
+        </button>
+
     <div class="PlacRC">
         <div>
             <input type="checkbox" id="cbx" class="cbx" style="display: none;">
@@ -90,7 +99,11 @@
 
 
 
-    <button class="accordion">Placements Specifiques MOB / OM</button>
+    <button class="accordion">
+        Placements Specifiques MOB / OM
+        <div id="icon3"></div>
+    </button>
+
     <div class="PlacSpec">
     <input type="checkbox" id="cbx6" class="cbx" style="display:none;">
             <label for="cbx6" class="check">
@@ -131,7 +144,11 @@
         </div>
 
 
-    <button class="accordion">Typologie</button>
+   <button class="accordion" id="accTypo">
+        Typologie
+        <div id="icon4"></div>
+    </button>
+
        <div class="Typo">
                  <select name="typologie" id="menu_deroulant">
                       <option value="">--Je choisi--</option>
@@ -141,18 +158,18 @@
                       <option value="mis_en_demeure">Mise en demeure</option>
                       <option value="mis_en_service">Demande de mise en service</option>
                       <option value="demande_resiliation">Demande de résiliation</option>
-                      <option value="demande_rc">Ddemande de RC</option>
+                      <option value="demande_rc">Demande de RC</option>
                       <option value="finalisation_mes">Finalisation de MES</option>
                    </select>
         </div>
     
-        <div class="monbouton">
+        <div class="posbtn">
     
             <button class="btn btn-bubble">Je déclare ma vente</button>
         </div>
         
     
-
+</div>
     <script src="script.js"></script>
 </body>
 
