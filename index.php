@@ -1,9 +1,17 @@
+<?php
+header('Content-type: text/html; charset=utf-8');
+require_once './styles/styleswitcher.inc.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-    <link rel="stylesheet" href="style.css">
-    <!--<link rel="stylesheet" href="style1.css">-->
+    <?php
+    if(!empty($url)){
+        echo '<link rel="stylesheet" href="./styles/'.$new_style.'/style.css">';
+    }
+    ?>
+    
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -170,6 +178,12 @@
         
     
 </div>
+
+<ul id="styleswitcher">
+  <li><a href="<?php echo $actuel; ?>?style=bleu">petite surprise</a></li>
+  <li><a href="<?php echo $actuel; ?>?style=vert">petite surprise</a></li>
+</ul>
+
     <script src="script.js"></script>
 </body>
 
