@@ -1,151 +1,78 @@
 @font-face{
-    font-family:'lato';
-    src:url(./police/Lato-Regular.ttf);
+    font-family: 'lato';
+    src: url(lato/Lato-Regular.ttf);
 }
 
 @font-face{
-    font-family:'ptitre';
-    src:url(./police/Lato-Black.ttf);
+    font-family: 'ptitre';
+    src: url(lato/Lato-Black.ttf);
 }
 
-        body {
-        
-        background: radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 5% 2% / 5em 5em,
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 79% 10% / 2em 2em,
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 99% 9% / 2em 2em,
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 31% 9% / 2em 2em,
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 110% 139% / 3em 3em, 
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 49% 130% / 6em 6em, 
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 60% 136% / 2em 2em,
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 5% 133% / 3em 3em, 
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 90% 114% / 0.87em 0.87em, 
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 61% 108% / 0.56em 0.56em, 
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 22% 124% / 0.62em 0.62em, 
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 112% 87% / 0.5em 0.5em, 
-        radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 40%) 11% 82% / 0.76em 0.76em;
-        background-color: rgba(241, 241, 241, 0.986);
-        background-repeat: no-repeat;
-        color: #3A5795;
-    }
 
-    
-    
-    
+/* Body */
+body {
+    background: radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 5% 2% / 5em 5em,
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 79% 10% / 2em 2em,
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 99% 9% / 2em 2em,
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 31% 9% / 2em 2em,
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 110% 139% / 3em 3em, 
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 49% 130% / 6em 6em, 
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 60% 136% / 2em 2em,  
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 5% 133% / 3em 3em, 
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 90% 114% / 0.87em 0.87em, 
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 61% 108% / 0.56em 0.56em, 
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 22% 124% / 0.62em 0.62em, 
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 70%) 112% 87% / 0.5em 0.5em, 
+    radial-gradient(circle at center, transparent 30%, #3A5795 60%, #4AAEDE 65%, transparent 40%) 11% 82% / 0.76em 0.76em;
+    background-color: rgba(241, 241, 241, 0.986);
+    background-repeat: no-repeat;
+    color: #3A5795;
+}
 
-    .globTitre{
-        width: 100%;
-        height: 5%;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around
-    }
-
-    
-        
-    
-    /*buton theme*/
-    
-    @import "compass/css3";
-    
-    
-    input {
-      position: absolute;
-      left: -9999px;
-    }
-    .slider-v2 {
-      position: relative;
-      display: block;
-      width: 5.5em;
-      height: 3em;
-      cursor: pointer;
-      border-radius: 1.5em;
-      transition: 350ms;
-      background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(255, 255, 255, 0)), #ddd;
-      box-shadow: 0 0.07em 0.1em -0.1em rgba(0, 0, 0, .4) inset, 0 0.05em 0.08em -0.01em rgba(255, 255, 255, .7);
-    }
-    .slider-v2::after {
-      position: absolute;
-      content: '';
-      width: 2em;
-      height: 2em;
-      top: 0.5em;
-      left: 0.5em;
-      border-radius: 50%;
-      transition: 250ms ease-in-out;
-      background: linear-gradient(#f5f5f5 10%, #eee);
-      box-shadow: 0 0.1em 0.15em -0.05em rgba(255, 255, 255, .9) inset, 0 0.2em 0.2em -0.12em rgba(0, 0, 0, .5);
-    }
-    .slider-v2::before {
-      position: absolute;
-      content: '';
-      width: 4em;
-      height: 1.5em;
-      top: 0.75em;
-      left: 0.75em;
-      border-radius: 0.75em;
-      transition: 250ms ease-in-out;
-      background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(255, 255, 255, 0.1)), #3A5795;
-      box-shadow: 0 0.08em 0.15em -0.1em rgba(0, 0, 0, .5) inset, 0 0.05em 0.08em -0.01em rgba(255, 255, 255, .7), 0 0 0 0 #23282D inset;
-    }
-    input:checked + .slider-v2::before {
-      box-shadow: 0 0.08em 0.15em -0.1em rgba(0, 0, 0, .5) inset, 0 0.05em 0.08em -0.01em rgba(255, 255, 255, .7), 3em 0 0 0 #23282D inset;
-    }
-    input:checked + .slider-v2::after {
-      left: 3em;
-    }
-    
-    
-
-
-/*les sous-titres*/
-.accordion {
-    background: rgb(74,174,222);
-    background: linear-gradient(240deg, rgba(74,174,222,0.8687675753895308) 10%, rgba(58,87,149,1) 59%);
-    color: #FFF;
-    font-size:18px;
-    font-family:'lato';
-    cursor: pointer;
-    padding: 18px;
+/*logo + titre + btn thème*/
+.globTitre{
     width: 100%;
+    height: 5%;
     text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    font-family: 'ptitre';
 }
 
-/*raduis des accordions*/
-
-#accFile{
-    border-radius: 30px 30px 0 0;
+/* dimension du logo */
+img{
+    width :100px;
+    height: 50px;
+    padding-top: 5px;
 }
 
-#accTypo{
-    border-radius: 0 0 30px 30px;
+/*titre en gras */
+.titre{
+    font-family: 'ptitre';
+    text-align: center;
 }
-  /* icone + */
- .accordion:after {
-    content: '\02795'; 
-    font-size: 15px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-    position: absolute;
-    right:20px;
+    
+/*button theme*/   
+.OnOff{
+    padding-top: 10px;
+    height: 4px;
+    width: 2px;
+}
 
-  }
-  
-  /* icone (-) */
-  .active:after {
-    content: "\2796"; 
-  }
-  
-  
+.bleu{
+    background: rgb(74,174,222);
+    background: linear-gradient(240deg, rgba(74,174,222,0.8687675753895308) 10%, rgba(58,87,149,1) 59%);
+    
+    border-radius:25px 25px 0 0;
+}
+
+.vert{
+    background: rgb(120,233,217);
+    background: linear-gradient(117deg, rgba(120,233,217,1) 6%, rgba(0,255,154,1) 96%);
+    border-radius:0 0 25px 25px;
+}
+
 
 /*le paragraphe*/
 .paragraphe{
@@ -154,28 +81,55 @@
     font-size:20px;
     background-color:rgba(119,119,119,0.2);
     border-radius: 30px;
+    color:#000;
 }
 
-/*titre en gras */
-.titre{
-    font-family: 'ptitre';
+/*les sous-titres  File | Placements | Placements Spec| Typo */
+.accordion {
+    background: rgb(74,174,222);
+    color: #FFF;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
     text-align: center;
-   
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+    font-family: 'lato';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-/* style des boutons 'file*/
-.file button{
-  background-color: #C8CCD4;
-  border: 1px solid white; 
-  color:#3A5795;
-  padding: 10px 24px;
-  cursor: pointer; 
-  float: left; 
-
+/*raduis des accordions*/
+#file{
+    border-radius: 30px 30px 0 0;
 }
 
-/*icone accordion*/
+#typo{
+    border-radius: 0 0 30px 30px;
+}
 
+/* icone (+) */
+.accordion:after {
+    content: '\02795'; 
+    font-size: 15px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    position: absolute;
+    right:20px;
+}
+  
+/* icone (-) */
+.active:after {
+    content: "\2796"; 
+}
+
+/* icone accordion */
 #icon1{
     background-image: url(img/learning.png);
     background-repeat: no-repeat;
@@ -212,56 +166,28 @@
     margin-left:20px;
 }
 
-/*dimension du logo*/
-img{
-    width :100px;
-    height: 50px;
-    padding-top: 5px;
-}
-
-/* bloc logo , titre , onoff*/
-.globTitre{
-    width: 100%;
-    height: 5%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 5px;
-}
-
-/*position bouton je declare ma vente*/
-.posbtn{
-    display: flex;
-    justify-content: end;
-    margin-right: 70px;
-    padding-top: 15px;
-}
-
-/* bouton offon*/
-.OnOff{
-    padding-top: 10px;
-    height: 4px;
-    width: 2px;
-}
-
-/* file */
+/*FILE*/
 .file{
     display:none;
     opacity: 1;  
     margin:auto;
     width:20px;
-    padding:20px;
+    padding:15px;
 }
 
-.rc{
+.file button{
+    background-color: #C8CCD4;
+    border: 1px solid white; 
+    color: #3A5795; 
+    padding: 10px 24px;
+    cursor: pointer; 
+    float: left; 
+}
+
+/*3 boutons du file*/
+.rc, .mc, .om{
     border-radius:30px;
-}
-.mc{
-    border-radius:30px; 
-}
-.om{
-    border-radius:30px; 
+    font-size:16px;
 }
 
 .position{
@@ -272,9 +198,21 @@ img{
     padding:3px;
 }
 
+.file input{
+    display: none;
+}
 
-/* pour que mes boutons garde une couleur  quand on clik*/
-.rc:focus{
+.file label{
+    background-color: #C8CCD4;
+    border: 1px solid white; 
+    color: #3A5795; 
+    padding: 10px 24px;
+    border-radius:30px;
+    font-size:16px;
+    cursor: pointer;
+}
+
+.file input:checked + label{
     background:#777;
     color:white;
 }
@@ -288,29 +226,26 @@ img{
     background: rgb(100, 100, 100);
     color:white;
 }
- 
-/* couleur au moment du survol*/
+
+/*couleur survol accordion */
 .file button:hover{
-    background-color:#777;
+    background-color: #777;
 }
 
- .accordion:hover {
-    background: rgb(35,40,45);
-    background: linear-gradient(240deg, rgba(35,40,45,1) 2%, rgba(58,87,149,1) 40%, rgba(74,174,222,0.8687675753895308) 69%);
+.accordion:hover {
+    background:#3A5795;
+   /* background: linear-gradient(240deg, rgba(35,40,45,1) 2%, rgba(58,87,149,1) 40%, rgba(74,174,222,0.8687675753895308) 69%);*/
 }
 
-/* les boutons  placements rc/spec/typo*/
-
-.PlacRC , .PlacSpec , .Typo{
-    padding: 25px; 
+/* Apparition | Réduction de l'accordion */
+.placement , .placementSpec, .typo{
+    padding: 25px;
     display: none;
     overflow: hidden;
-    text-align:center;
-    
-
+    text-align: center;
 }
 
-/* animation sur les checkbox*/
+/* animation sur les checkbox */
 .check{
     cursor: pointer;
     position: relative;
@@ -319,9 +254,9 @@ img{
     height: 18px;
     -webkit-tap-highlight-color: transparent;
     transform: translate3d(0,0,0);
-    padding:15px;
-
+    padding-left: 15px;
 }
+
 .check:before{
     content: "";
     position: absolute;
@@ -334,12 +269,15 @@ img{
     opacity: 0;
     transition: opacity .2s ease;
 }
+
 .check:hover svg{
     stroke: #4285F4;
 }
+
 .check:hover:before{
     opacity: 1;
 }
+
 .check svg{
     position: relative;
     z-index: 1;
@@ -350,12 +288,13 @@ img{
     stroke-width: 1.5;
     transform: translate3d(0,0,0);
     transition: all .2s ease;
-
 }
+
 .check svg path{
     stroke-dasharray: 60;
     stroke-dashoffset: 0;
 }
+
 .check svg polyline{
     stroke-dasharray: 22;
     stroke-dashoffset: 66;
@@ -364,6 +303,7 @@ img{
 .cbx:checked + .check svg{
     stroke: #4285F4;
 }
+
 .cbx:checked + .check path{
     stroke-dashoffset: 60;
     transition: all .3s linear;
@@ -375,48 +315,46 @@ img{
     transition-delay: .15s;
 }
 
+/*position bouton je declare ma vente*/
+.posbtn{
+    display: flex;
+    justify-content: end;
+    margin-right: 70px;
+    padding-top: 15px;
+}
 
 /*animation du bouton "declarer ma vente " */
-
-
 .btn-bubble {
     color: white;
-    background-color: #23282D;
+    background-color: #3A5795;
     background-repeat: no-repeat;
-  }
+    color: #FFF;
+}
 
 .btn-bubble:hover, .btn-bubble:focus {
     animation: bubbles 1s forwards ease-out;
     background: radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) -4% 139% / 1.02em 1.02em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 110% 144% / 0.96em 0.96em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 49% 137% / 0.6em 0.6em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 17% 122% / 0.61em 0.61em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 63% 136% / 0.55em 0.55em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 6% 133% / 0.62em 0.62em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 92% 114% / 0.87em 0.87em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 61% 108% / 0.56em 0.56em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 22% 124% / 0.62em 0.62em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 112% 87% / 0.5em 0.5em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 11% 82% / 0.76em 0.76em;
-    background-color:#44aaaa;
+    background-color: #3A5795;
     background-repeat: no-repeat;
+    color: #FFF;
 }
   
 @keyframes bubbles {
     100% {
       background-position: -8% -30%, 111% -347%, 41% -358%, 22% -276%, 63% -14%, 8% -7%, 91% -277%, 58% -360%, 14% -41%, 119% -307%, 12% -165%;
-      box-shadow: inset 0 -6.5em 0 #3A5795;
+      box-shadow: inset 0 -6.5em 0 #4AAEDE;
     }
 }
 
 .btn {
     background-color: #3A5795;
-    display: inline-block;
     text-decoration: none;
     padding: 1em 2em;
-    left:60px;
+    color: #FFF;
+    margin-top: 2px; 
     border-radius: 30px;
 }
 
-
-  .btn:hover {
-    
-      cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
-  }
-
-  
-  .monbouton{
-      display: flex;
-      justify-content:flex-end;
-      padding-right:50px;
-  }
+.btn:hover {
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+}

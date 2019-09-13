@@ -1,21 +1,13 @@
-<?php
-header('Content-type: text/html; charset=utf-8');
-require_once './styles/styleswitcher.inc.php';
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <?php
-    if(!empty($url)){
-        echo '<link rel="stylesheet" href="./styles/'.$new_style.'/style.css">';
-    }
-    ?>
     
     
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link id="css" rel="stylesheet" type="text/css" href="./styles/bleu/style.css"/>
     <title>Déclarer une vente</title>
 </head>
 <body>
@@ -28,8 +20,8 @@ require_once './styles/styleswitcher.inc.php';
         </div>
 
         <div class="OnOff">
-            <input type="checkbox" id="s3" />
-            <label class="slider-v2" for="s3"></label>
+        <button class="bleu" onclick="document.getElementById('css').href='styles/bleu/style.css';">Style 1</button>
+        <button class="vert" onclick="document.getElementById('css').href='styles/vert/style.css';">Style 2</button>
         </div>
     </div>
 
@@ -38,24 +30,25 @@ require_once './styles/styleswitcher.inc.php';
     </div>
 
 <div class="accor">
-        <button class="accordion" id="accFile">
+        <button class="accordion" id="file">
             File
             <div id="icon1"></div>
         </button>
-        <div class="file">
+
+        <div class="accordionContent file">
                 <div class="position">
-                  <button class="rc">RC</button>
-                  <button class="mc">MOC</button>
-                  <button class="om">OM</button>  
+                    <input type="radio" name="file" class="rc" value="rc" id="fileRc"><label for="fileRc">RC</label>
+                    <input type="radio" name="file" class="mob" value="mob" id="fileMob"><label for="fileMob">MOB</label>
+                    <input type="radio" name="file" class="om" value="om" id="fileOm"><label for="fileOm">OM</label>
                 </div>
         </div>
 
-        <button class="accordion">
-             Placements RC / MOC / OM
+        <button class="accordion" id="placement">
+             Placements RC / MOB / OM
              <div id="icon2"></div>
         </button>
 
-    <div class="PlacRC">
+    <div class="accordionContent placement">
         <div>
             <input type="checkbox" id="cbx" class="cbx" style="display: none;">
             <label for="cbx" class="check">
@@ -107,12 +100,12 @@ require_once './styles/styleswitcher.inc.php';
 
 
 
-    <button class="accordion">
+    <button class="accordion" id="placementSpec">
         Placements Specifiques MOB / OM
         <div id="icon3"></div>
     </button>
 
-    <div class="PlacSpec">
+    <div class="accordionContent placementSpec">
     <input type="checkbox" id="cbx6" class="cbx" style="display:none;">
             <label for="cbx6" class="check">
                 <svg width="18px" height="18px" viewBox="0 0 18 18">
@@ -128,7 +121,7 @@ require_once './styles/styleswitcher.inc.php';
                     <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
                     <polyline points="1 9 7 14 15 4"></polyline>
                 </svg>
-                <span>ASU</span>
+                <span>ASSU</span>
             </label>
 
             <input type="checkbox" id="cbx8" class="cbx" style="display:none;">
@@ -152,14 +145,14 @@ require_once './styles/styleswitcher.inc.php';
         </div>
 
 
-   <button class="accordion" id="accTypo">
+   <button class="accordion" id="typo">
         Typologie
         <div id="icon4"></div>
     </button>
 
-       <div class="Typo">
-                 <select name="typologie" id="menu_deroulant">
-                      <option value="">--Je choisi--</option>
+       <div class="accordionContent typo">
+                 <select name="typologie" id="menu_deroulant" required>
+                      <option value="">--Je choisis--</option>
                       <option value="autre">Autres</option>
                       <option value="MES">MES en attente</option>
                       <option value="Finalisation">Finalisation</option>
@@ -179,10 +172,6 @@ require_once './styles/styleswitcher.inc.php';
     
 </div>
 
-<ul id="styleswitcher">
-  <li><a href="<?php echo $actuel; ?>?style=bleu">petite surprise</a></li>
-  <li><a href="<?php echo $actuel; ?>?style=vert">petite surprise</a></li>
-</ul>
 
     <script src="script.js"></script>
 </body>
