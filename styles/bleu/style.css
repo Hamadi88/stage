@@ -1,11 +1,21 @@
 @font-face{
-    font-family: 'lato';
-    src: url(lato/Lato-Regular.ttf);
+    font-family: 'pacifico';
+    src:url(../../pacifico/Pacifico.ttf);
 }
 
 @font-face{
-    font-family: 'ptitre';
-    src: url(lato/Lato-Black.ttf);
+    font-family:'abeat';
+    src:url(../../abeatbykai/ABEAKRG.TTF);
+}
+
+@font-face{
+    font-family:'lato';
+    src:url(../../lato/Lato-Regular.ttf);
+}
+
+@font-face{
+    font-family:'ptitre';
+    src:url(../../lato/Lato-Black.ttf);
 }
 
 
@@ -49,7 +59,7 @@ img{
 
 /*titre en gras */
 .titre{
-    font-family: 'ptitre';
+    font-family: 'abeat';
     text-align: center;
 }
     
@@ -63,14 +73,14 @@ img{
 .bleu{
     background: rgb(74,174,222);
     background: linear-gradient(240deg, rgba(74,174,222,0.8687675753895308) 10%, rgba(58,87,149,1) 59%);
-    
     border-radius:25px 25px 0 0;
+    font-family: 'ptitre'
 }
 
 .vert{
-    background: rgb(120,233,217);
-    background: linear-gradient(117deg, rgba(120,233,217,1) 6%, rgba(0,255,154,1) 96%);
+    background:#78e9de;
     border-radius:0 0 25px 25px;
+    font-family:'ptitre'
 }
 
 
@@ -96,7 +106,7 @@ img{
     outline: none;
     transition: 0.4s;
     font-size: 18px;
-    font-family: 'lato';
+    font-family: 'abeat';
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -131,7 +141,7 @@ img{
 
 /* icone accordion */
 #icon1{
-    background-image: url(img/learning.png);
+    background-image: url(../../img/learning.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -140,7 +150,7 @@ img{
 }
 
 #icon2{
-    background-image: url(img/elearning.png);
+    background-image: url(../../img/elearning.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -149,7 +159,7 @@ img{
 }
 
 #icon3{
-    background-image: url(img/piggy-bank.png);
+    background-image: url(../../img/piggy-bank.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -158,7 +168,7 @@ img{
 }
 
 #icon4{
-    background-image: url(img/chat.png);
+    background-image: url(../../img/chat.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -188,6 +198,7 @@ img{
 .rc, .mc, .om{
     border-radius:30px;
     font-size:16px;
+    font-family: 'abeat';
 }
 
 .position{
@@ -243,6 +254,7 @@ img{
     display: none;
     overflow: hidden;
     text-align: center;
+    font-family: 'abeat';
 }
 
 /* animation sur les checkbox */
@@ -315,6 +327,12 @@ img{
     transition-delay: .15s;
 }
 
+#menu_deroulant{
+    font-family: 'abeat';
+    text-align:center;
+    padding:4px;
+}
+
 /*position bouton je declare ma vente*/
 .posbtn{
     display: flex;
@@ -329,6 +347,7 @@ img{
     background-color: #3A5795;
     background-repeat: no-repeat;
     color: #FFF;
+    font-family: 'abeat';
 }
 
 .btn-bubble:hover, .btn-bubble:focus {

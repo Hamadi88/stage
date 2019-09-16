@@ -19,6 +19,7 @@ function toggleSibling(elem){
     }
 }
 
+/*ouverture des panneaux selon la case cochée*/
 
 var fileCheckboxs = document.querySelectorAll(".file input");
 fileCheckboxs.forEach(function(checkbox){
@@ -41,30 +42,32 @@ fileCheckboxs.forEach(function(checkbox){
     }
   });
 });
-/*
-var rcCCheckbox = document.querySelector('.file .rc');
-rcCCheckbox.addEventListener('change', function(){
-  if(this.checked){
-      let placementTitle = document.querySelector("#placement");
-      placementTitle.classList.add('active');
-      toggleSibling(placementTitle);
-  }else{
 
-  }
-});
+/* chekbox placement  */
+    var placementcheckbox = document.querySelectorAll(".placement input");
+    placementcheckbox.forEach(function(checkbox) {
+    checkbox.addEventListener('change',function(){
+       if(checkbox.checked ){
+         let typologie = document.querySelector("#typo");
+         typologie.classList.add('active');
+         toggleSibling(typologie);
+       }
+      
+      });
+    });
 
-var mobCheckbox = document.querySelector('.file .mob');
-mobCheckbox.addEventListener('change', function(){
-  if(this.checked){
-    let file = this.value;
-    if (file =="mob"){
-      let placementTitle = document.querySelector("#placement");
-      placementTitle.classList.add('active');
-      toggleSibling(placementTitle);
-      let placementSpecTitle = document.querySelector("#placementSpec");
-      placementSpecTitle.classList.add('active');
-      toggleSibling(placementSpecTitle);
-    }
-  }
-});
-*/
+    /* checkbox placement special*/
+    var placementSpecCheckbox = document.querySelectorAll(".placementSpec input");
+    placementSpecCheckbox.forEach(function(checkbox) {
+    checkbox.addEventListener('change',function(){
+       if(checkbox.checked){
+         let typologie1 = document.querySelector("#typo");
+         typologie1.classList.add('active');
+         toggleSibling(typologie1);
+         
+       }
+      });
+    });
+
+  
+     

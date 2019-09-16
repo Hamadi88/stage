@@ -1,11 +1,21 @@
 @font-face{
+    font-family: 'pacifico';
+    src:url(../../pacifico/Pacifico.ttf);
+}
+
+@font-face{
+    font-family:'abeat';
+    src:url(../../abeatbykai/ABEAKRG.TTF);
+}
+
+@font-face{
     font-family:'lato';
-    src:url(./police/Lato-Regular.ttf);
+    src:url(../../lato/Lato-Regular.ttf);
 }
 
 @font-face{
     font-family:'ptitre';
-    src:url(./police/Lato-Black.ttf);
+    src:url(../../lato/Lato-Black.ttf);
 }
 
 span{
@@ -52,7 +62,7 @@ img{
 
 /*titre en gras */
 .titre{
-    font-family: 'ptitre';
+    font-family: 'abeat';
     text-align: center;
 }
     
@@ -64,21 +74,22 @@ img{
 }
 
 .bleu{
-    background: rgb(74,174,222);
-    background: linear-gradient(240deg, rgba(74,174,222,0.8687675753895308) 10%, rgba(58,87,149,1) 59%);
+    background: #4AAEDE;
     border-radius:25px 25px 0 0;
-    
+    font-family: 'ptitre';
 }
 
 .vert{
-    background: rgb(120,233,217);
-    background: linear-gradient(117deg, rgba(120,233,217,1) 6%, rgba(0,255,154,1) 96%);
+    background:#78e9de;
     border-radius:0 0 25px 25px;
-    border:0.5px solid #00ff9a
+    font-family:'ptitre'
 }
+   /* border:0.5px solid #00ff9a */
+
 
 
 /*le paragraphe*/
+
 .paragraphe{
     text-align: center;
     font-family: 'lato';
@@ -90,11 +101,10 @@ img{
     
 /*les sous-titres  File | Placements | Placements Spec| Typo */
 .accordion {
-    background: rgb(120,233,217);
-    background: linear-gradient(117deg, rgba(120,233,217,1) 6%, rgba(0,255,154,1) 96%);
+    background: #00FF90;
     color:#000;
     font-size:18px;
-    font-family:'lato';
+    font-family:'abeat';
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -136,7 +146,7 @@ img{
   
 /* icone accordion */
 #icon1{
-    background-image: url(img/learning.png);
+    background-image: url(../../img/learning.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -145,7 +155,7 @@ img{
 }
 
 #icon2{
-    background-image: url(img/elearning.png);
+    background-image: url(../../img/elearning.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -154,7 +164,7 @@ img{
 }
 
 #icon3{
-    background-image: url(img/piggy-bank.png);
+    background-image: url(../../img/piggy-bank.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -163,7 +173,7 @@ img{
 }
 
 #icon4{
-    background-image: url(img/chat.png);
+    background-image: url(../../img/chat.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25px;
@@ -181,25 +191,46 @@ img{
   float: left; 
 }
 
+.file input{
+    display: none;
+}
+
 /* file */
 .file{
     display:none;
     opacity: 1;  
     margin:auto;
     width:20px;
-    padding:20px;
+    padding:15px;
 }
+
+.file label{
+    background-color: #C8CCD4;
+    border: 1px solid white; 
+    color: #3A5795; 
+    padding: 10px 24px;
+    border-radius:30px;
+    font-size:16px;
+    cursor: pointer;
+}
+
+.file input:checked + label{
+    background:#777;
+    color:white;
+}
+
 
 /*3 boutons du file*/
 .rc, .mc, .om{
     border-radius:30px;
     font-size:16px;
+    font-family: 'abeat'
 }
 
 .position{
     display:flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content:space-around;
     width:100%;
     padding:3px;
 }
@@ -226,22 +257,15 @@ img{
 
 .accordion:hover {
     background: rgb(120,233,217);
-    background: linear-gradient(270deg, rgba(120,233,217,1) 6%, rgba(0,255,154,1) 96%);
 }
-____________________________________________________________________________________
-____________________________________________________________________________________
+
 /* Apparition | Réduction de l'accordion */
-.PlacRC, .PlacSpec,.Typo{
+.placement, .placementSpec, .typo{
     padding: 25px;
     display: none;
     overflow: hidden;
     text-align:center;
-}
-
-.PlacRC{
-    text-align: center;
-    display: none;
-    padding:25px;
+    font-family: 'abeat';
 }
 
 /* animation sur les checkbox*/
@@ -314,6 +338,13 @@ ________________________________________________________________________________
     transition-delay: .15s;
 }
 
+/*menu deroulant*/
+#menu_deroulant{
+    font-family: 'abeat';
+    text-align-last: center;
+    padding: 4px;
+}
+
 /*position bouton je declare ma vente*/
 .posbtn{
     display: flex;
@@ -327,6 +358,7 @@ ________________________________________________________________________________
     color: white;
     background-color: #23282D;
     background-repeat: no-repeat;
+    font-family: 'abeat';
 }
 
 .btn-bubble:hover, .btn-bubble:focus {
