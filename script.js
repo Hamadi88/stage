@@ -1,3 +1,29 @@
+//garde en mémoire le changement de thème
+
+function changeCss(theme='Theme1'){
+  document.getElementById('css').href='styles/'+theme+'/style.css';
+  saveInCookie(theme);
+}
+
+function saveInCookie(theme){
+  document.cookie = "duv_theme="+theme;
+}
+
+function loadThemeCookie(){
+  let regex = /duv_theme=(.*);?/;
+  let cookie = document.cookie;
+  let result = ""
+  result = cookie.match(regex);
+  if(result != null){
+    changeCss(result[1]);
+  }
+}
+
+loadThemeCookie();
+
+
+
+
 var acc = document.getElementsByClassName("accordion");
 var i;
     /*Action couleur  lors de la selection*/
@@ -51,6 +77,8 @@ fileCheckboxs.forEach(function(checkbox){
          let typologie = document.querySelector("#typo");
          typologie.classList.add('active');
          toggleSibling(typologie);
+         var typ = typologie.nextElementSibling;
+         typ.style.display = "block";
        }
       
       });
@@ -64,6 +92,8 @@ fileCheckboxs.forEach(function(checkbox){
          let typologie1 = document.querySelector("#typo");
          typologie1.classList.add('active');
          toggleSibling(typologie1);
+         var typ1 = typologie1.nextElementSibling;
+         typ1.style.display = "block";
          
        }
       });

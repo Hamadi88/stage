@@ -1,21 +1,21 @@
 @font-face{
+    font-family: 'lato';
+    src: url("../../lato/Lato-Regular.ttf");
+}
+
+@font-face{
+    font-family: 'ptitre';
+    src: url("../../lato/Lato-Black.ttf");
+}
+
+@font-face{
     font-family: 'pacifico';
-    src:url(../../pacifico/Pacifico.ttf);
+    src: url("../../pacifico/Pacifico.ttf");
 }
 
 @font-face{
-    font-family:'abeat';
-    src:url(../../abeatbykai/ABEAKRG.TTF);
-}
-
-@font-face{
-    font-family:'lato';
-    src:url(../../lato/Lato-Regular.ttf);
-}
-
-@font-face{
-    font-family:'ptitre';
-    src:url(../../lato/Lato-Black.ttf);
+    font-family: "abeat";
+    src: url("../../abeatbykai/ABEAKRG.TTF");
 }
 
 span{
@@ -54,7 +54,7 @@ body {
 }
 
 /* dimension du logo */
-img{
+.img{
     width :100px;
     height: 50px;
     padding-top: 5px;
@@ -63,7 +63,6 @@ img{
 /*titre en gras */
 .titre{
     font-family: 'abeat';
-    text-align: center;
 }
     
 /*button theme*/   
@@ -74,22 +73,19 @@ img{
 }
 
 .bleu{
-    background: #4AAEDE;
-    border-radius:25px 25px 0 0;
+    border-radius: 25px 25px 0 0;
+    background-color: #4AAEDE;
     font-family: 'ptitre';
 }
 
 .vert{
-    background:#78e9de;
-    border-radius:0 0 25px 25px;
-    font-family:'ptitre'
+    border-radius: 0 0 25px 25px;
+    background-color: #78e9d9;
+    font-family: 'ptitre';
 }
-   /* border:0.5px solid #00ff9a */
-
 
 
 /*le paragraphe*/
-
 .paragraphe{
     text-align: center;
     font-family: 'lato';
@@ -101,7 +97,7 @@ img{
     
 /*les sous-titres  File | Placements | Placements Spec| Typo */
 .accordion {
-    background: #00FF90;
+    background: #00ff90;
     color:#000;
     font-size:18px;
     font-family:'abeat';
@@ -119,6 +115,9 @@ img{
     align-items: center;
 }
 
+.accordionContent{
+    background-color: #00ff9033;
+}
 /*raduis des accordions*/
 #file{
     border-radius: 30px 30px 0 0;
@@ -183,16 +182,11 @@ img{
 
 /* style des boutons file */
 .file button{
-  background-color: #C8CCD4;
-  border: 1px solid #ddd; 
+  background-color: #C8CCD4; 
   color:#000;
   padding: 10px 24px;
   cursor: pointer; 
   float: left; 
-}
-
-.file input{
-    display: none;
 }
 
 /* file */
@@ -200,14 +194,30 @@ img{
     display:none;
     opacity: 1;  
     margin:auto;
-    width:20px;
-    padding:15px;
+}
+
+/*3 boutons du file*/
+.rc, .mc, .om{
+    border-radius:30px;
+    font-size:16px;
+    font-family: 'abeat';
+}
+
+.position{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    width:100%;
+    padding:3px;
+}
+
+.file input{
+    display: none;
 }
 
 .file label{
-    background-color: #C8CCD4;
-    border: 1px solid white; 
-    color: #3A5795; 
+    background-color: #C8CCD4;  
+    color: #000;
     padding: 10px 24px;
     border-radius:30px;
     font-size:16px;
@@ -215,27 +225,6 @@ img{
 }
 
 .file input:checked + label{
-    background:#777;
-    color:white;
-}
-
-
-/*3 boutons du file*/
-.rc, .mc, .om{
-    border-radius:30px;
-    font-size:16px;
-    font-family: 'abeat'
-}
-
-.position{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    width:100%;
-    padding:3px;
-}
-
-.rc:focus{
     background:#777;
     color:white;
 }
@@ -260,13 +249,15 @@ img{
 }
 
 /* Apparition | Réduction de l'accordion */
-.placement, .placementSpec, .typo{
+.placement , .placementSpec,.typo{
     padding: 25px;
     display: none;
     overflow: hidden;
-    text-align:center;
+    text-align: center;
     font-family: 'abeat';
 }
+
+
 
 /* animation sur les checkbox*/
 .check{
@@ -277,7 +268,7 @@ img{
     height: 18px;
     -webkit-tap-highlight-color: transparent;
     transform: translate3d(0,0,0);
-    padding:15px;
+    padding-left:15px;
 }
 
 .check:before{
@@ -338,9 +329,9 @@ img{
     transition-delay: .15s;
 }
 
-/*menu deroulant*/
+/* menu_deroulant */
 #menu_deroulant{
-    font-family: 'abeat';
+    font-family: "abeat";
     text-align-last: center;
     padding: 4px;
 }
@@ -348,7 +339,7 @@ img{
 /*position bouton je declare ma vente*/
 .posbtn{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: 70px;
     padding-top: 15px;
 }
@@ -358,7 +349,7 @@ img{
     color: white;
     background-color: #23282D;
     background-repeat: no-repeat;
-    font-family: 'abeat';
+    font-family: "abeat";
 }
 
 .btn-bubble:hover, .btn-bubble:focus {
@@ -371,13 +362,12 @@ img{
 @keyframes bubbles {
     100% {
       background-position: -8% -30%, 111% -347%, 41% -358%, 22% -276%, 63% -14%, 8% -7%, 91% -277%, 58% -360%, 14% -41%, 119% -307%, 12% -165%;
-      box-shadow: inset 0 -6.5em 0 #1dd2af;
+      box-shadow: inset 0 -6.5em 0 #00ff90;
     }
 }
 
 .btn {
     background-color: #1dd2af;
-    display: inline-block;
     text-decoration: none;
     padding: 1em 2em;
     left:60px;
@@ -386,4 +376,25 @@ img{
 
 .btn:hover {    
     cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+}
+
+/*--------------------------------------------------------------------
+                        Optionnel
+--------------------------------------------------------------------*/
+
+.demo{
+    background-color: #77777733;
+    border-radius: 35px;
+    font-family: 'pacifico';
+    text-align: center;
+}
+
+.submit{
+    border-radius: 30px;
+    padding:6px;
+    font-family: 'abeat';
+}
+
+.nb{
+    padding: 4px;
 }

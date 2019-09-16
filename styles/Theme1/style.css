@@ -1,23 +1,22 @@
 @font-face{
+    font-family: 'lato';
+    src: url("../../lato/Lato-Regular.ttf");
+}
+
+@font-face{
+    font-family: 'ptitre';
+    src: url("../../lato/Lato-Black.ttf");
+}
+
+@font-face{
     font-family: 'pacifico';
-    src:url(../../pacifico/Pacifico.ttf);
+    src: url("../../pacifico/Pacifico.ttf");
 }
 
 @font-face{
-    font-family:'abeat';
-    src:url(../../abeatbykai/ABEAKRG.TTF);
+    font-family: "abeat";
+    src: url("../../abeatbykai/ABEAKRG.TTF");
 }
-
-@font-face{
-    font-family:'lato';
-    src:url(../../lato/Lato-Regular.ttf);
-}
-
-@font-face{
-    font-family:'ptitre';
-    src:url(../../lato/Lato-Black.ttf);
-}
-
 
 /* Body */
 body {
@@ -51,7 +50,7 @@ body {
 }
 
 /* dimension du logo */
-img{
+.img{
     width :100px;
     height: 50px;
     padding-top: 5px;
@@ -59,8 +58,7 @@ img{
 
 /*titre en gras */
 .titre{
-    font-family: 'abeat';
-    text-align: center;
+    font-family: "abeat";
 }
     
 /*button theme*/   
@@ -71,18 +69,16 @@ img{
 }
 
 .bleu{
-    background: rgb(74,174,222);
-    background: linear-gradient(240deg, rgba(74,174,222,0.8687675753895308) 10%, rgba(58,87,149,1) 59%);
-    border-radius:25px 25px 0 0;
-    font-family: 'ptitre'
+    border-radius: 25px 25px 0 0;
+    background-color: #4AAEDE;
+    font-family: 'ptitre'; 
 }
 
 .vert{
-    background:#78e9de;
-    border-radius:0 0 25px 25px;
-    font-family:'ptitre'
+    border-radius: 0 0 25px 25px;
+    background-color: #78e9d9;
+    font-family: 'ptitre';
 }
-
 
 /*le paragraphe*/
 .paragraphe{
@@ -112,6 +108,10 @@ img{
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.accordionContent{
+    background-color: rgba(74, 174, 222, 0.3);
 }
 
 /*raduis des accordions*/
@@ -181,8 +181,6 @@ img{
     display:none;
     opacity: 1;  
     margin:auto;
-    width:20px;
-    padding:15px;
 }
 
 .file button{
@@ -204,7 +202,7 @@ img{
 .position{
     display:flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: center;
     width:100%;
     padding:3px;
 }
@@ -215,7 +213,6 @@ img{
 
 .file label{
     background-color: #C8CCD4;
-    border: 1px solid white; 
     color: #3A5795; 
     padding: 10px 24px;
     border-radius:30px;
@@ -237,19 +234,17 @@ img{
     background: rgb(100, 100, 100);
     color:white;
 }
-
 /*couleur survol accordion */
 .file button:hover{
     background-color: #777;
 }
 
 .accordion:hover {
-    background:#3A5795;
-   /* background: linear-gradient(240deg, rgba(35,40,45,1) 2%, rgba(58,87,149,1) 40%, rgba(74,174,222,0.8687675753895308) 69%);*/
+    background: #3A5795;
 }
 
 /* Apparition | Réduction de l'accordion */
-.placement , .placementSpec, .typo{
+.placement , .placementSpec ,.typo{
     padding: 25px;
     display: none;
     overflow: hidden;
@@ -327,16 +322,17 @@ img{
     transition-delay: .15s;
 }
 
+/* menu_deroulant */
 #menu_deroulant{
-    font-family: 'abeat';
-    text-align:center;
-    padding:4px;
+    font-family: "abeat";
+    text-align-last: center;
+    padding: 4px;
 }
 
 /*position bouton je declare ma vente*/
 .posbtn{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: 70px;
     padding-top: 15px;
 }
@@ -346,8 +342,7 @@ img{
     color: white;
     background-color: #3A5795;
     background-repeat: no-repeat;
-    color: #FFF;
-    font-family: 'abeat';
+    font-family: "abeat";
 }
 
 .btn-bubble:hover, .btn-bubble:focus {
@@ -355,7 +350,6 @@ img{
     background: radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) -4% 139% / 1.02em 1.02em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 110% 144% / 0.96em 0.96em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 49% 137% / 0.6em 0.6em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 17% 122% / 0.61em 0.61em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 63% 136% / 0.55em 0.55em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 6% 133% / 0.62em 0.62em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 92% 114% / 0.87em 0.87em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 61% 108% / 0.56em 0.56em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 22% 124% / 0.62em 0.62em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 112% 87% / 0.5em 0.5em, radial-gradient(circle at center, transparent 30%, #eef 60%, #eef 65%, transparent 70%) 11% 82% / 0.76em 0.76em;
     background-color: #3A5795;
     background-repeat: no-repeat;
-    color: #FFF;
 }
   
 @keyframes bubbles {
@@ -376,4 +370,26 @@ img{
 
 .btn:hover {
     cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+}
+
+/*--------------------------------------------------------------------
+                        Optionnel
+--------------------------------------------------------------------*/
+
+.demo{
+    background-color: #77777733;
+    border-radius: 35px;
+    font-family: 'pacifico';
+    text-align: center;
+}
+
+.submit{
+    border-radius: 30px;
+    padding: 6px;
+    font-family: 'abeat';
+    margin: 6px;
+}
+
+.nb{
+    padding: 4px;
 }
